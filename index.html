@@ -22,11 +22,18 @@
       </p>
       <form action="/mailer.php">
         <input type="email" name="myemail" />
-        <input type="text" placeholder="Nombre" name="name" />
-        <input type="email" placeholder="Correo" name="email" />
+        <input type="text" placeholder="Nombre" name="name" required />
+        <input type="email" placeholder="Correo" name="email" required />
         <textarea placeholder="Mensaje" name="message"></textarea>
         <button>Enviar</button>
+        <div class="lds-ring">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </form>
+      <div class="form-message"></div>
       <div class="nav-footer">
         <a href="mailto:contacto@agrisolucion.com">contacto@agrisolucion.com</a>
         <div class="location">Querétaro, México.</div>
@@ -52,7 +59,7 @@
     </div>
     <div class="home-slider">
       <div class="home-slider__slide">
-        <img src="./dist/img/agrisolucion-4.jpg" alt="Agrisolución" />
+        <img src="./dist/img/agrisolucion-5.jpg" alt="Agrisolución" />
         <div class="home-slider__slide-content container">
           <div class="row">
             <div class="col-md-10 col-lg-8 mx-auto mx-lg-0">
